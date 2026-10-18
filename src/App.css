@@ -18,7 +18,7 @@
 
     width: auto;
 
-    background: #CBF1F5;
+    background: white;
 }
 
 .app-footer {
@@ -31,5 +31,5 @@
     min-height: 5rem;
     padding: 10px;
 
-    background: white;
+    background: #CBF1F5;
 }

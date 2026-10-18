@@ -3,6 +3,7 @@ import Hero from "./components/Hero.jsx";
 import Cards from "./components/Cards.jsx";
 
 import "./App.css"
+import Resources from "./components/Resources.jsx";
 
 
 const App = () => {
@@ -18,6 +19,7 @@ const App = () => {
             </main>
 
             <footer className="app-footer">
+                <Resources />
             </footer>
         </>
     )

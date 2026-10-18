@@ -1,0 +1,21 @@
+.resources{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    width: 100%;
+    padding: 1.25rem;
+}
+.resources-left, .resources-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.resources a {
+    color: dimgray;
+    text-decoration: none;
+}
