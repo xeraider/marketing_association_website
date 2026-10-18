@@ -4,7 +4,6 @@
     position: relative;
     gap: 1rem;
     flex-shrink: 0;
-    color: white;
     text-decoration: none;
 }
 
@@ -12,7 +11,7 @@
     width: 3.5rem;
     aspect-ratio: 1;
     border-radius: 50%;
-    background: white;
+    background: #71C9CE;
 }
 
 .navbar-text{
@@ -30,15 +29,20 @@
 .navbar-nav a{
     text-decoration: none;
     font-size: 1rem;
-    color: white;
+    color: black;
 }
 
 .navbar-nav a:hover{
-    color: gray;
+    color: #71C9CE;
 }
 
 .navbar-login{
-    padding: 0.5rem;
-    border: white solid 1px;
+    padding: 0.5rem 1rem;
+    border: #71C9CE solid 2px;
     border-radius: 0.3rem;
+}
+
+a.navbar-login:hover{
+    background: #71C9CE;
+    color: white;
 }

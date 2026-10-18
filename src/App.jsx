@@ -17,7 +17,8 @@ const App = () => {
                 <Cards />
             </main>
 
-            <footer className="app-footer"></footer>
+            <footer className="app-footer">
+            </footer>
         </>
     )
 }
