@@ -1,11 +1,23 @@
+import Navbar from "./components/Navbar.jsx";
+import Hero from "./components/Hero.jsx";
+import Cards from "./components/Cards.jsx";
+
+import "./App.css"
+
+
 const App = () => {
     return (
         <>
-            <header></header>
+            <header className="app-header">
+                <Navbar />
+            </header>
 
-            <main></main>
+            <main className="app-main">
+                <Hero />
+                <Cards />
+            </main>
 
-            <footer></footer>
+            <footer className="app-footer"></footer>
         </>
     )
 }
