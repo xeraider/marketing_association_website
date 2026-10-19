@@ -1,17 +1,39 @@
+/* Contains the search input and the search button */
 .search-bar{
     display: flex;
     justify-content: center;
-
     min-height: 2.5rem;
 }
 
+/* Text input for search */
 .search-input{
     width: 40vw;
 }
 
+/* Search button */
 .search-button{
     width: 10rem;
     font-size: 1rem;
     color: black;
     background: #71C9CE;
+    cursor: pointer;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .search-bar{
+        width: 90%;
+        flex-direction: column;
+        gap: 0.2rem;
+    }
+
+    .search-input{
+        width: 100%;
+        min-height: 2.5rem;
+    }
+
+    .search-button{
+        width: 100%;
+        min-height: 2.5rem;
+    }
 }

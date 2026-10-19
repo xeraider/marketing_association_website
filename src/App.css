@@ -1,26 +1,25 @@
+/* Header containing nav and company */
 .app-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: relative;
-
     width: auto;
     min-height: 4rem;
-    padding: 10px;
-
+    padding: 5px 2vw 5px 4vw;
     background: white;
 }
 
+/* Main area containing hero and cards */
 .app-main{
     display: flex;
     flex-direction: column;
     position: relative;
-
     width: auto;
-
     background: white;
 }
 
+/* Footer containing resources */
 .app-footer {
     display: flex;
     align-items: center;
@@ -28,8 +27,21 @@
     position: relative;
 
     width: auto;
-    min-height: 5rem;
+    min-height: 4rem;
     padding: 10px;
 
     background: #CBF1F5;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+
+    .app-header{
+        min-height: 2.75rem;
+        padding: 0.25rem 0.5rem;
+    }
+
+    .app-footer{
+        padding: 0.5rem;
+    }
 }

@@ -1,3 +1,4 @@
+/* Resource links for footer */
 .resources{
     display: flex;
     align-items: center;
@@ -7,6 +8,8 @@
     width: 100%;
     padding: 1.25rem;
 }
+
+/* Separation for links for socials and terms */
 .resources-left, .resources-right {
     display: flex;
     align-items: center;
@@ -15,7 +18,21 @@
     gap: 0.75rem;
 }
 
+/* Resource links */
 .resources a {
     color: dimgray;
     text-decoration: none;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .resources{
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 0.75rem;
+    }
+
+    .resources-left, .resources-right {
+        justify-content: center;
+    }
 }

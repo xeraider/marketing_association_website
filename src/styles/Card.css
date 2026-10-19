@@ -1,3 +1,4 @@
+/* Article card */
 .card{
     width: clamp(18rem, 25vw, 35rem);
     background: #71C9CE;
@@ -5,24 +6,35 @@
     flex-shrink: 0;
 }
 
+/* Card image */
 .card-image{
     width: 100%;
-    height: 15vw;
     max-height: 18rem;
     object-fit: cover;
 }
-.card-header{
+
+/* Contains description and title of card */
+.card-footer{
     height: 100%;
     padding: 10px 20px;
-    background: #fff;
+    background: #CBF1F5;
 }
 
+/* Card title */
 .card-title{
     margin:auto;
     color: black;
 }
 
+/* Card description */
 .card-content{
     margin:auto;
     color: dimgray;
+}
+
+/* Mobile */
+@media (max-width: 1000px) {
+    .card{
+        width: 80vw;
+    }
 }

@@ -1,48 +1,122 @@
+/* Main nav container */
+.navbar-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+}
+
+/* Container for the logo and company name */
 .navbar-company{
     display: flex;
     align-items: center;
-    position: relative;
     gap: 1rem;
     flex-shrink: 0;
     text-decoration: none;
 }
 
+/* Company logo */
 .navbar-logo {
     width: 3.5rem;
     aspect-ratio: 1;
     border-radius: 50%;
     background: #71C9CE;
+    object-fit: cover;
 }
 
+/* Company name */
 .navbar-text{
     font-size: 1.5rem;
     font-weight: 500;
 }
 
+/* Navigation menu */
 .navbar-nav{
     display: flex;
     align-items: center;
-    justify-content: flex-end;
     gap: 3vw;
 }
 
+/* Links in nav */
 .navbar-nav a{
     text-decoration: none;
     font-size: 1rem;
     color: black;
 }
 
+/* Hovered links */
 .navbar-nav a:hover{
     color: #71C9CE;
 }
 
+/* Login button */
 .navbar-login{
     padding: 0.5rem 1rem;
     border: #71C9CE solid 2px;
     border-radius: 0.3rem;
 }
 
+/* Login button hover */
 a.navbar-login:hover{
     background: #71C9CE;
     color: white;
+}
+
+/* Burger menu button */
+.navbar-burger-button {
+    display: none;
+    justify-content: flex-end;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+/* Burger menu icon */
+.navbar-burger-icon{
+    width: 2.5rem;
+}
+
+/* Mobile */
+@media (max-width: 600px){
+
+    .navbar-container{
+        display: grid;
+        grid-template-columns: 1fr auto;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .navbar-text {
+        font-size: 1.3rem;
+    }
+
+    .navbar-nav {
+        display: none;
+    }
+
+    .navbar-nav.is-open {
+        display: grid;
+        grid-column: span 2;
+        padding: 15px 5px 10px;
+    }
+
+    .navbar-nav a {
+        padding: 0.5rem 1rem;
+        border: black solid 2px;
+        border-radius: 0.3rem;
+    }
+
+    .navbar-login {
+        border: none;
+    }
+
+    a.navbar-login:hover{
+        background: white;
+        color: #71C9CE;
+    }
+
+    .navbar-burger-button {
+        display: flex;
+    }
 }
