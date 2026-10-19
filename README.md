@@ -1,3 +1,39 @@
+# Marketing Association Website
+
+A website project built using React and CSS.
+
+## Features
+- Navigation bar
+- Hero section
+- Search bar
+- Cards section
+- Resources section
+- Responsive layout
+
+## Technologies
+- React
+- JavaScript
+- CSS
+- Vite
+
+## How to Run
+
+1. Clone the repository.
+2. Install the dependencies:
+
+   ```bash
+   npm install
+   ```
+
+3. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+4. Open the local URL shown in the terminal.
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
